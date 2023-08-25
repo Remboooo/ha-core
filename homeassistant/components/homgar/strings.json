@@ -1,0 +1,36 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Authentication",
+        "description": "Enter your HomGar credentials.\n\nNote: do not use an account you also use in the app, as you can only be logged in on one device at a time.",
+        "data": {
+          "username": "[%key:common::config_flow::data::username%]",
+          "password": "[%key:common::config_flow::data::password%]"
+        }
+      },
+      "choose_home": {
+        "title": "Home",
+        "description": "Choose the home that contains the hub you want to add",
+        "data": {
+          "hid": "Home"
+        }
+      },
+      "choose_hub": {
+        "title": "Hub",
+        "description": "Choose the hub you want to add",
+        "data": {
+          "mid": "Hub"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    }
+  }
+}

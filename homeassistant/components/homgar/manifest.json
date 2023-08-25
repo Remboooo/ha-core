@@ -1,0 +1,15 @@
+{
+  "domain": "homgar",
+  "name": "HomGar",
+  "codeowners": ["@Remboooo"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.home-assistant.io/integrations/homgar",
+  "homekit": {},
+  "iot_class": "cloud_polling",
+  "requirements": [
+    "homgarapi@git+https://github.com/Remboooo/homgarapi.git@72d290d"
+  ],
+  "ssdp": [],
+  "zeroconf": []
+}
